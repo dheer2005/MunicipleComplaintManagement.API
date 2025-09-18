@@ -1,0 +1,6 @@
+@MunicipleComplaintMgmtSys.API_HostAddress = http://localhost:5248
+
+GET {{MunicipleComplaintMgmtSys.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

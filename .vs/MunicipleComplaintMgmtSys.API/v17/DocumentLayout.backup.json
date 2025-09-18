@@ -1,0 +1,106 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\dhire\\source\\repos\\MunicipleComplaintMgmtSys.API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9F52A01E-562F-4C03-ABA3-6F9BD33ADFFE}|MunicipleComplaintMgmtSys.API.csproj|c:\\users\\dhire\\source\\repos\\municiplecomplaintmgmtsys.api\\controllers\\workercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F52A01E-562F-4C03-ABA3-6F9BD33ADFFE}|MunicipleComplaintMgmtSys.API.csproj|solutionrelative:controllers\\workercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F52A01E-562F-4C03-ABA3-6F9BD33ADFFE}|MunicipleComplaintMgmtSys.API.csproj|c:\\users\\dhire\\source\\repos\\municiplecomplaintmgmtsys.api\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F52A01E-562F-4C03-ABA3-6F9BD33ADFFE}|MunicipleComplaintMgmtSys.API.csproj|solutionrelative:controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F52A01E-562F-4C03-ABA3-6F9BD33ADFFE}|MunicipleComplaintMgmtSys.API.csproj|c:\\users\\dhire\\source\\repos\\municiplecomplaintmgmtsys.api\\dtos\\updateprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F52A01E-562F-4C03-ABA3-6F9BD33ADFFE}|MunicipleComplaintMgmtSys.API.csproj|solutionrelative:dtos\\updateprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F52A01E-562F-4C03-ABA3-6F9BD33ADFFE}|MunicipleComplaintMgmtSys.API.csproj|c:\\users\\dhire\\source\\repos\\municiplecomplaintmgmtsys.api\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F52A01E-562F-4C03-ABA3-6F9BD33ADFFE}|MunicipleComplaintMgmtSys.API.csproj|solutionrelative:controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UpdateProfileDto.cs",
+              "DocumentMoniker": "C:\\Users\\dhire\\source\\repos\\MunicipleComplaintMgmtSys.API\\DTOs\\UpdateProfileDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\UpdateProfileDto.cs",
+              "ToolTip": "C:\\Users\\dhire\\source\\repos\\MunicipleComplaintMgmtSys.API\\DTOs\\UpdateProfileDto.cs",
+              "RelativeToolTip": "DTOs\\UpdateProfileDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T11:48:02.048Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthenticationController.cs",
+              "DocumentMoniker": "C:\\Users\\dhire\\source\\repos\\MunicipleComplaintMgmtSys.API\\Controllers\\AuthenticationController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthenticationController.cs",
+              "ToolTip": "C:\\Users\\dhire\\source\\repos\\MunicipleComplaintMgmtSys.API\\Controllers\\AuthenticationController.cs",
+              "RelativeToolTip": "Controllers\\AuthenticationController.cs",
+              "ViewState": "AgIAAIgAAAAAAAAAAAAAAHsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T11:44:53.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WorkerController.cs",
+              "DocumentMoniker": "C:\\Users\\dhire\\source\\repos\\MunicipleComplaintMgmtSys.API\\Controllers\\WorkerController.cs",
+              "RelativeDocumentMoniker": "Controllers\\WorkerController.cs",
+              "ToolTip": "C:\\Users\\dhire\\source\\repos\\MunicipleComplaintMgmtSys.API\\Controllers\\WorkerController.cs",
+              "RelativeToolTip": "Controllers\\WorkerController.cs",
+              "ViewState": "AgIAACQBAAAAAAAAAAAowDUBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T08:11:48.849Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DepartmentController.cs",
+              "DocumentMoniker": "C:\\Users\\dhire\\source\\repos\\MunicipleComplaintMgmtSys.API\\Controllers\\DepartmentController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DepartmentController.cs",
+              "ToolTip": "C:\\Users\\dhire\\source\\repos\\MunicipleComplaintMgmtSys.API\\Controllers\\DepartmentController.cs",
+              "RelativeToolTip": "Controllers\\DepartmentController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T10:00:23.833Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
