@@ -19,6 +19,7 @@ namespace MunicipleComplaintMgmtSys.API.ComplaintContext
         public DbSet<Feedback> Feedbacks { get; set; }
         public DbSet<AuditLog> AuditLogs { get; set; }
         public DbSet<WorkUpdate> WorkUpdates { get; set; }
+        public DbSet<OfficialDepartment> OfficialDepartments { get; set; }
 
 
 
@@ -132,6 +133,22 @@ namespace MunicipleComplaintMgmtSys.API.ComplaintContext
                 .HasOne(wu => wu.Complaint)
                 .WithMany(c => c.WorkUpdates)
                 .HasForeignKey(wu => wu.ComplaintId);
+
+            //official departments
+            modelBuilder.Entity<OfficialDepartment>()
+                .HasKey(od => new { od.OfficialId, od.DepartmentId });
+
+            modelBuilder.Entity<OfficialDepartment>()
+                .HasOne(od => od.Official)
+                .WithMany(o => o.OfficialDepartments)
+                .HasForeignKey(od => od.OfficialId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<OfficialDepartment>()
+                .HasOne(od => od.Department)
+                .WithMany(d => d.OfficialDepartments)
+                .HasForeignKey(od => od.DepartmentId)
+                .OnDelete(DeleteBehavior.Restrict);
         }
 
 

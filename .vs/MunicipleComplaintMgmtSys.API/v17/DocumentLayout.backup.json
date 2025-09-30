@@ -1,22 +1,106 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\dhire\\source\\repos\\MunicipleComplaintMgmtSys.API\\",
+  "WorkspaceRootPath": "C:\\Users\\codetrade\\source\\repos\\MunicipleComplaintManagement.API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9F52A01E-562F-4C03-ABA3-6F9BD33ADFFE}|MunicipleComplaintMgmtSys.API.csproj|c:\\users\\dhire\\source\\repos\\municiplecomplaintmgmtsys.api\\controllers\\workercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F52A01E-562F-4C03-ABA3-6F9BD33ADFFE}|MunicipleComplaintMgmtSys.API.csproj|solutionrelative:controllers\\workercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9F52A01E-562F-4C03-ABA3-6F9BD33ADFFE}|MunicipleComplaintMgmtSys.API.csproj|c:\\users\\codetrade\\source\\repos\\municiplecomplaintmanagement.api\\complaintcontext\\complaintdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F52A01E-562F-4C03-ABA3-6F9BD33ADFFE}|MunicipleComplaintMgmtSys.API.csproj|solutionrelative:complaintcontext\\complaintdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F52A01E-562F-4C03-ABA3-6F9BD33ADFFE}|MunicipleComplaintMgmtSys.API.csproj|c:\\users\\dhire\\source\\repos\\municiplecomplaintmgmtsys.api\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9F52A01E-562F-4C03-ABA3-6F9BD33ADFFE}|MunicipleComplaintMgmtSys.API.csproj|c:\\users\\codetrade\\source\\repos\\municiplecomplaintmanagement.api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F52A01E-562F-4C03-ABA3-6F9BD33ADFFE}|MunicipleComplaintMgmtSys.API.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F52A01E-562F-4C03-ABA3-6F9BD33ADFFE}|MunicipleComplaintMgmtSys.API.csproj|c:\\users\\codetrade\\source\\repos\\municiplecomplaintmanagement.api\\models\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F52A01E-562F-4C03-ABA3-6F9BD33ADFFE}|MunicipleComplaintMgmtSys.API.csproj|solutionrelative:models\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F52A01E-562F-4C03-ABA3-6F9BD33ADFFE}|MunicipleComplaintMgmtSys.API.csproj|c:\\users\\codetrade\\source\\repos\\municiplecomplaintmanagement.api\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F52A01E-562F-4C03-ABA3-6F9BD33ADFFE}|MunicipleComplaintMgmtSys.API.csproj|solutionrelative:controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F52A01E-562F-4C03-ABA3-6F9BD33ADFFE}|MunicipleComplaintMgmtSys.API.csproj|c:\\users\\codetrade\\source\\repos\\municiplecomplaintmanagement.api\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F52A01E-562F-4C03-ABA3-6F9BD33ADFFE}|MunicipleComplaintMgmtSys.API.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F52A01E-562F-4C03-ABA3-6F9BD33ADFFE}|MunicipleComplaintMgmtSys.API.csproj|c:\\users\\codetrade\\source\\repos\\municiplecomplaintmanagement.api\\controllers\\auditcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F52A01E-562F-4C03-ABA3-6F9BD33ADFFE}|MunicipleComplaintMgmtSys.API.csproj|solutionrelative:controllers\\auditcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F52A01E-562F-4C03-ABA3-6F9BD33ADFFE}|MunicipleComplaintMgmtSys.API.csproj|c:\\users\\codetrade\\source\\repos\\municiplecomplaintmanagement.api\\dtos\\createauditdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F52A01E-562F-4C03-ABA3-6F9BD33ADFFE}|MunicipleComplaintMgmtSys.API.csproj|solutionrelative:dtos\\createauditdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F52A01E-562F-4C03-ABA3-6F9BD33ADFFE}|MunicipleComplaintMgmtSys.API.csproj|c:\\users\\codetrade\\source\\repos\\municiplecomplaintmanagement.api\\models\\auditlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F52A01E-562F-4C03-ABA3-6F9BD33ADFFE}|MunicipleComplaintMgmtSys.API.csproj|solutionrelative:models\\auditlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F52A01E-562F-4C03-ABA3-6F9BD33ADFFE}|MunicipleComplaintMgmtSys.API.csproj|c:\\users\\codetrade\\source\\repos\\municiplecomplaintmanagement.api\\controllers\\officialcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F52A01E-562F-4C03-ABA3-6F9BD33ADFFE}|MunicipleComplaintMgmtSys.API.csproj|solutionrelative:controllers\\officialcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F52A01E-562F-4C03-ABA3-6F9BD33ADFFE}|MunicipleComplaintMgmtSys.API.csproj|c:\\users\\codetrade\\source\\repos\\municiplecomplaintmanagement.api\\models\\official.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F52A01E-562F-4C03-ABA3-6F9BD33ADFFE}|MunicipleComplaintMgmtSys.API.csproj|solutionrelative:models\\official.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F52A01E-562F-4C03-ABA3-6F9BD33ADFFE}|MunicipleComplaintMgmtSys.API.csproj|c:\\users\\codetrade\\source\\repos\\municiplecomplaintmanagement.api\\dtos\\departmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F52A01E-562F-4C03-ABA3-6F9BD33ADFFE}|MunicipleComplaintMgmtSys.API.csproj|solutionrelative:dtos\\departmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F52A01E-562F-4C03-ABA3-6F9BD33ADFFE}|MunicipleComplaintMgmtSys.API.csproj|c:\\users\\codetrade\\source\\repos\\municiplecomplaintmanagement.api\\models\\officialdepartment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F52A01E-562F-4C03-ABA3-6F9BD33ADFFE}|MunicipleComplaintMgmtSys.API.csproj|solutionrelative:models\\officialdepartment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F52A01E-562F-4C03-ABA3-6F9BD33ADFFE}|MunicipleComplaintMgmtSys.API.csproj|c:\\users\\codetrade\\source\\repos\\municiplecomplaintmanagement.api\\controllers\\complaintcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F52A01E-562F-4C03-ABA3-6F9BD33ADFFE}|MunicipleComplaintMgmtSys.API.csproj|solutionrelative:controllers\\complaintcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F52A01E-562F-4C03-ABA3-6F9BD33ADFFE}|MunicipleComplaintMgmtSys.API.csproj|c:\\users\\codetrade\\source\\repos\\municiplecomplaintmanagement.api\\enums\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F52A01E-562F-4C03-ABA3-6F9BD33ADFFE}|MunicipleComplaintMgmtSys.API.csproj|solutionrelative:enums\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F52A01E-562F-4C03-ABA3-6F9BD33ADFFE}|MunicipleComplaintMgmtSys.API.csproj|c:\\users\\codetrade\\source\\repos\\municiplecomplaintmanagement.api\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9F52A01E-562F-4C03-ABA3-6F9BD33ADFFE}|MunicipleComplaintMgmtSys.API.csproj|solutionrelative:controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F52A01E-562F-4C03-ABA3-6F9BD33ADFFE}|MunicipleComplaintMgmtSys.API.csproj|c:\\users\\dhire\\source\\repos\\municiplecomplaintmgmtsys.api\\dtos\\updateprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F52A01E-562F-4C03-ABA3-6F9BD33ADFFE}|MunicipleComplaintMgmtSys.API.csproj|solutionrelative:dtos\\updateprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9F52A01E-562F-4C03-ABA3-6F9BD33ADFFE}|MunicipleComplaintMgmtSys.API.csproj|c:\\users\\codetrade\\source\\repos\\municiplecomplaintmanagement.api\\controllers\\workercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F52A01E-562F-4C03-ABA3-6F9BD33ADFFE}|MunicipleComplaintMgmtSys.API.csproj|solutionrelative:controllers\\workercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F52A01E-562F-4C03-ABA3-6F9BD33ADFFE}|MunicipleComplaintMgmtSys.API.csproj|c:\\users\\dhire\\source\\repos\\municiplecomplaintmgmtsys.api\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F52A01E-562F-4C03-ABA3-6F9BD33ADFFE}|MunicipleComplaintMgmtSys.API.csproj|solutionrelative:controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9F52A01E-562F-4C03-ABA3-6F9BD33ADFFE}|MunicipleComplaintMgmtSys.API.csproj|c:\\users\\codetrade\\source\\repos\\municiplecomplaintmanagement.api\\dtos\\userprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F52A01E-562F-4C03-ABA3-6F9BD33ADFFE}|MunicipleComplaintMgmtSys.API.csproj|solutionrelative:dtos\\userprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F52A01E-562F-4C03-ABA3-6F9BD33ADFFE}|MunicipleComplaintMgmtSys.API.csproj|c:\\users\\codetrade\\source\\repos\\municiplecomplaintmanagement.api\\dtos\\departmentinfodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F52A01E-562F-4C03-ABA3-6F9BD33ADFFE}|MunicipleComplaintMgmtSys.API.csproj|solutionrelative:dtos\\departmentinfodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F52A01E-562F-4C03-ABA3-6F9BD33ADFFE}|MunicipleComplaintMgmtSys.API.csproj|c:\\users\\codetrade\\source\\repos\\municiplecomplaintmanagement.api\\dtos\\userregisterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F52A01E-562F-4C03-ABA3-6F9BD33ADFFE}|MunicipleComplaintMgmtSys.API.csproj|solutionrelative:dtos\\userregisterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F52A01E-562F-4C03-ABA3-6F9BD33ADFFE}|MunicipleComplaintMgmtSys.API.csproj|c:\\users\\codetrade\\source\\repos\\municiplecomplaintmanagement.api\\models\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F52A01E-562F-4C03-ABA3-6F9BD33ADFFE}|MunicipleComplaintMgmtSys.API.csproj|solutionrelative:models\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F52A01E-562F-4C03-ABA3-6F9BD33ADFFE}|MunicipleComplaintMgmtSys.API.csproj|c:\\users\\codetrade\\source\\repos\\municiplecomplaintmanagement.api\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F52A01E-562F-4C03-ABA3-6F9BD33ADFFE}|MunicipleComplaintMgmtSys.API.csproj|solutionrelative:models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F52A01E-562F-4C03-ABA3-6F9BD33ADFFE}|MunicipleComplaintMgmtSys.API.csproj|c:\\users\\codetrade\\source\\repos\\municiplecomplaintmanagement.api\\enums\\complaintstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F52A01E-562F-4C03-ABA3-6F9BD33ADFFE}|MunicipleComplaintMgmtSys.API.csproj|solutionrelative:enums\\complaintstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F52A01E-562F-4C03-ABA3-6F9BD33ADFFE}|MunicipleComplaintMgmtSys.API.csproj|c:\\users\\codetrade\\source\\repos\\municiplecomplaintmanagement.api\\models\\workupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F52A01E-562F-4C03-ABA3-6F9BD33ADFFE}|MunicipleComplaintMgmtSys.API.csproj|solutionrelative:models\\workupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F52A01E-562F-4C03-ABA3-6F9BD33ADFFE}|MunicipleComplaintMgmtSys.API.csproj|c:\\users\\codetrade\\source\\repos\\municiplecomplaintmanagement.api\\models\\complaint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F52A01E-562F-4C03-ABA3-6F9BD33ADFFE}|MunicipleComplaintMgmtSys.API.csproj|solutionrelative:models\\complaint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F52A01E-562F-4C03-ABA3-6F9BD33ADFFE}|MunicipleComplaintMgmtSys.API.csproj|c:\\users\\codetrade\\source\\repos\\municiplecomplaintmanagement.api\\dtos\\admindashboardstatsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F52A01E-562F-4C03-ABA3-6F9BD33ADFFE}|MunicipleComplaintMgmtSys.API.csproj|solutionrelative:dtos\\admindashboardstatsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +110,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,53 +134,312 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UpdateProfileDto.cs",
-              "DocumentMoniker": "C:\\Users\\dhire\\source\\repos\\MunicipleComplaintMgmtSys.API\\DTOs\\UpdateProfileDto.cs",
-              "RelativeDocumentMoniker": "DTOs\\UpdateProfileDto.cs",
-              "ToolTip": "C:\\Users\\dhire\\source\\repos\\MunicipleComplaintMgmtSys.API\\DTOs\\UpdateProfileDto.cs",
-              "RelativeToolTip": "DTOs\\UpdateProfileDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T11:48:02.048Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AuthenticationController.cs",
-              "DocumentMoniker": "C:\\Users\\dhire\\source\\repos\\MunicipleComplaintMgmtSys.API\\Controllers\\AuthenticationController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AuthenticationController.cs",
-              "ToolTip": "C:\\Users\\dhire\\source\\repos\\MunicipleComplaintMgmtSys.API\\Controllers\\AuthenticationController.cs",
-              "RelativeToolTip": "Controllers\\AuthenticationController.cs",
-              "ViewState": "AgIAAIgAAAAAAAAAAAAAAHsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T11:44:53.432Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "WorkerController.cs",
-              "DocumentMoniker": "C:\\Users\\dhire\\source\\repos\\MunicipleComplaintMgmtSys.API\\Controllers\\WorkerController.cs",
-              "RelativeDocumentMoniker": "Controllers\\WorkerController.cs",
-              "ToolTip": "C:\\Users\\dhire\\source\\repos\\MunicipleComplaintMgmtSys.API\\Controllers\\WorkerController.cs",
-              "RelativeToolTip": "Controllers\\WorkerController.cs",
-              "ViewState": "AgIAACQBAAAAAAAAAAAowDUBAAAAAAAAAAAAAA==",
+              "Title": "ComplaintDBContext.cs",
+              "DocumentMoniker": "C:\\Users\\codetrade\\source\\repos\\MunicipleComplaintManagement.API\\ComplaintContext\\ComplaintDBContext.cs",
+              "RelativeDocumentMoniker": "ComplaintContext\\ComplaintDBContext.cs",
+              "ToolTip": "C:\\Users\\codetrade\\source\\repos\\MunicipleComplaintManagement.API\\ComplaintContext\\ComplaintDBContext.cs",
+              "RelativeToolTip": "ComplaintContext\\ComplaintDBContext.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAA2wAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T08:11:48.849Z",
+              "WhenOpened": "2025-09-30T08:08:16.075Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "DepartmentController.cs",
-              "DocumentMoniker": "C:\\Users\\dhire\\source\\repos\\MunicipleComplaintMgmtSys.API\\Controllers\\DepartmentController.cs",
+              "DocumentMoniker": "C:\\Users\\codetrade\\source\\repos\\MunicipleComplaintManagement.API\\Controllers\\DepartmentController.cs",
               "RelativeDocumentMoniker": "Controllers\\DepartmentController.cs",
-              "ToolTip": "C:\\Users\\dhire\\source\\repos\\MunicipleComplaintMgmtSys.API\\Controllers\\DepartmentController.cs",
+              "ToolTip": "C:\\Users\\codetrade\\source\\repos\\MunicipleComplaintManagement.API\\Controllers\\DepartmentController.cs",
               "RelativeToolTip": "Controllers\\DepartmentController.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAawFQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T10:00:23.833Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AuditController.cs",
+              "DocumentMoniker": "C:\\Users\\codetrade\\source\\repos\\MunicipleComplaintManagement.API\\Controllers\\AuditController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuditController.cs",
+              "ToolTip": "C:\\Users\\codetrade\\source\\repos\\MunicipleComplaintManagement.API\\Controllers\\AuditController.cs",
+              "RelativeToolTip": "Controllers\\AuditController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAArwBoAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-19T11:03:57.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CreateAuditDto.cs",
+              "DocumentMoniker": "C:\\Users\\codetrade\\source\\repos\\MunicipleComplaintManagement.API\\DTOs\\CreateAuditDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\CreateAuditDto.cs",
+              "ToolTip": "C:\\Users\\codetrade\\source\\repos\\MunicipleComplaintManagement.API\\DTOs\\CreateAuditDto.cs",
+              "RelativeToolTip": "DTOs\\CreateAuditDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-19T12:41:53.988Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AuditLog.cs",
+              "DocumentMoniker": "C:\\Users\\codetrade\\source\\repos\\MunicipleComplaintManagement.API\\Models\\AuditLog.cs",
+              "RelativeDocumentMoniker": "Models\\AuditLog.cs",
+              "ToolTip": "C:\\Users\\codetrade\\source\\repos\\MunicipleComplaintManagement.API\\Models\\AuditLog.cs",
+              "RelativeToolTip": "Models\\AuditLog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T13:02:45.043Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\codetrade\\source\\repos\\MunicipleComplaintManagement.API\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\codetrade\\source\\repos\\MunicipleComplaintManagement.API\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Controllers\\AdminController.cs",
+              "ViewState": "AgIAADgBAAAAAAAAAAAQwDwBAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-19T11:15:44.872Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\codetrade\\source\\repos\\MunicipleComplaintManagement.API\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "C:\\Users\\codetrade\\source\\repos\\MunicipleComplaintManagement.API\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T07:38:09.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Worker.cs",
+              "DocumentMoniker": "C:\\Users\\codetrade\\source\\repos\\MunicipleComplaintManagement.API\\Models\\Worker.cs",
+              "RelativeDocumentMoniker": "Models\\Worker.cs",
+              "ToolTip": "C:\\Users\\codetrade\\source\\repos\\MunicipleComplaintManagement.API\\Models\\Worker.cs",
+              "RelativeToolTip": "Models\\Worker.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T07:38:03.101Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Official.cs",
+              "DocumentMoniker": "C:\\Users\\codetrade\\source\\repos\\MunicipleComplaintManagement.API\\Models\\Official.cs",
+              "RelativeDocumentMoniker": "Models\\Official.cs",
+              "ToolTip": "C:\\Users\\codetrade\\source\\repos\\MunicipleComplaintManagement.API\\Models\\Official.cs",
+              "RelativeToolTip": "Models\\Official.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T12:59:13.977Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "OfficialDepartment.cs",
+              "DocumentMoniker": "C:\\Users\\codetrade\\source\\repos\\MunicipleComplaintManagement.API\\Models\\OfficialDepartment.cs",
+              "RelativeDocumentMoniker": "Models\\OfficialDepartment.cs",
+              "ToolTip": "C:\\Users\\codetrade\\source\\repos\\MunicipleComplaintManagement.API\\Models\\OfficialDepartment.cs",
+              "RelativeToolTip": "Models\\OfficialDepartment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T05:55:54.823Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UserRole.cs",
+              "DocumentMoniker": "C:\\Users\\codetrade\\source\\repos\\MunicipleComplaintManagement.API\\Enums\\UserRole.cs",
+              "RelativeDocumentMoniker": "Enums\\UserRole.cs",
+              "ToolTip": "C:\\Users\\codetrade\\source\\repos\\MunicipleComplaintManagement.API\\Enums\\UserRole.cs",
+              "RelativeToolTip": "Enums\\UserRole.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T09:38:03.017Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "OfficialController.cs",
+              "DocumentMoniker": "C:\\Users\\codetrade\\source\\repos\\MunicipleComplaintManagement.API\\Controllers\\OfficialController.cs",
+              "RelativeDocumentMoniker": "Controllers\\OfficialController.cs",
+              "ToolTip": "C:\\Users\\codetrade\\source\\repos\\MunicipleComplaintManagement.API\\Controllers\\OfficialController.cs",
+              "RelativeToolTip": "Controllers\\OfficialController.cs",
+              "ViewState": "AgIAAFIBAAAAAAAAAAAAAFQBAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-19T09:27:00.993Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DepartmentDto.cs",
+              "DocumentMoniker": "C:\\Users\\codetrade\\source\\repos\\MunicipleComplaintManagement.API\\DTOs\\DepartmentDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\DepartmentDto.cs",
+              "ToolTip": "C:\\Users\\codetrade\\source\\repos\\MunicipleComplaintManagement.API\\DTOs\\DepartmentDto.cs",
+              "RelativeToolTip": "DTOs\\DepartmentDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-29T11:05:21.706Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ComplaintController.cs",
+              "DocumentMoniker": "C:\\Users\\codetrade\\source\\repos\\MunicipleComplaintManagement.API\\Controllers\\ComplaintController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ComplaintController.cs",
+              "ToolTip": "C:\\Users\\codetrade\\source\\repos\\MunicipleComplaintManagement.API\\Controllers\\ComplaintController.cs",
+              "RelativeToolTip": "Controllers\\ComplaintController.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAIA3wCoAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-19T11:32:18.387Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "WorkerController.cs",
+              "DocumentMoniker": "C:\\Users\\codetrade\\source\\repos\\MunicipleComplaintManagement.API\\Controllers\\WorkerController.cs",
+              "RelativeDocumentMoniker": "Controllers\\WorkerController.cs",
+              "ToolTip": "C:\\Users\\codetrade\\source\\repos\\MunicipleComplaintManagement.API\\Controllers\\WorkerController.cs",
+              "RelativeToolTip": "Controllers\\WorkerController.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAawG4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T08:11:48.849Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AuthenticationController.cs",
+              "DocumentMoniker": "C:\\Users\\codetrade\\source\\repos\\MunicipleComplaintManagement.API\\Controllers\\AuthenticationController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthenticationController.cs",
+              "ToolTip": "C:\\Users\\codetrade\\source\\repos\\MunicipleComplaintManagement.API\\Controllers\\AuthenticationController.cs",
+              "RelativeToolTip": "Controllers\\AuthenticationController.cs",
+              "ViewState": "AgIAAJ8AAAAAAAAAAAAlwH0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-19T11:15:49.812Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "UserRegisterDto.cs",
+              "DocumentMoniker": "C:\\Users\\codetrade\\source\\repos\\MunicipleComplaintManagement.API\\DTOs\\UserRegisterDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\UserRegisterDto.cs",
+              "ToolTip": "C:\\Users\\codetrade\\source\\repos\\MunicipleComplaintManagement.API\\DTOs\\UserRegisterDto.cs",
+              "RelativeToolTip": "DTOs\\UserRegisterDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T06:04:58.714Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Feedback.cs",
+              "DocumentMoniker": "C:\\Users\\codetrade\\source\\repos\\MunicipleComplaintManagement.API\\Models\\Feedback.cs",
+              "RelativeDocumentMoniker": "Models\\Feedback.cs",
+              "ToolTip": "C:\\Users\\codetrade\\source\\repos\\MunicipleComplaintManagement.API\\Models\\Feedback.cs",
+              "RelativeToolTip": "Models\\Feedback.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T10:00:23.833Z"
+              "WhenOpened": "2025-09-26T06:29:04.938Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "UserProfileDto.cs",
+              "DocumentMoniker": "C:\\Users\\codetrade\\source\\repos\\MunicipleComplaintManagement.API\\DTOs\\UserProfileDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\UserProfileDto.cs",
+              "ToolTip": "C:\\Users\\codetrade\\source\\repos\\MunicipleComplaintManagement.API\\DTOs\\UserProfileDto.cs",
+              "RelativeToolTip": "DTOs\\UserProfileDto.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAowBQAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T06:44:02.404Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "DepartmentInfoDto.cs",
+              "DocumentMoniker": "C:\\Users\\codetrade\\source\\repos\\MunicipleComplaintManagement.API\\DTOs\\DepartmentInfoDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\DepartmentInfoDto.cs",
+              "ToolTip": "C:\\Users\\codetrade\\source\\repos\\MunicipleComplaintManagement.API\\DTOs\\DepartmentInfoDto.cs",
+              "RelativeToolTip": "DTOs\\DepartmentInfoDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T07:02:24.024Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Department.cs",
+              "DocumentMoniker": "C:\\Users\\codetrade\\source\\repos\\MunicipleComplaintManagement.API\\Models\\Department.cs",
+              "RelativeDocumentMoniker": "Models\\Department.cs",
+              "ToolTip": "C:\\Users\\codetrade\\source\\repos\\MunicipleComplaintManagement.API\\Models\\Department.cs",
+              "RelativeToolTip": "Models\\Department.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T05:48:31.559Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ComplaintStatus.cs",
+              "DocumentMoniker": "C:\\Users\\codetrade\\source\\repos\\MunicipleComplaintManagement.API\\Enums\\ComplaintStatus.cs",
+              "RelativeDocumentMoniker": "Enums\\ComplaintStatus.cs",
+              "ToolTip": "C:\\Users\\codetrade\\source\\repos\\MunicipleComplaintManagement.API\\Enums\\ComplaintStatus.cs",
+              "RelativeToolTip": "Enums\\ComplaintStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T10:05:11.287Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Complaint.cs",
+              "DocumentMoniker": "C:\\Users\\codetrade\\source\\repos\\MunicipleComplaintManagement.API\\Models\\Complaint.cs",
+              "RelativeDocumentMoniker": "Models\\Complaint.cs",
+              "ToolTip": "C:\\Users\\codetrade\\source\\repos\\MunicipleComplaintManagement.API\\Models\\Complaint.cs",
+              "RelativeToolTip": "Models\\Complaint.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAgwA4AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T07:46:30.367Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "WorkUpdate.cs",
+              "DocumentMoniker": "C:\\Users\\codetrade\\source\\repos\\MunicipleComplaintManagement.API\\Models\\WorkUpdate.cs",
+              "RelativeDocumentMoniker": "Models\\WorkUpdate.cs",
+              "ToolTip": "C:\\Users\\codetrade\\source\\repos\\MunicipleComplaintManagement.API\\Models\\WorkUpdate.cs",
+              "RelativeToolTip": "Models\\WorkUpdate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T08:47:57.331Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "AdminDashboardStatsDto.cs",
+              "DocumentMoniker": "C:\\Users\\codetrade\\source\\repos\\MunicipleComplaintManagement.API\\DTOs\\AdminDashboardStatsDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\AdminDashboardStatsDto.cs",
+              "ToolTip": "C:\\Users\\codetrade\\source\\repos\\MunicipleComplaintManagement.API\\DTOs\\AdminDashboardStatsDto.cs",
+              "RelativeToolTip": "DTOs\\AdminDashboardStatsDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAmwA0AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T07:34:15.355Z"
             }
           ]
         }

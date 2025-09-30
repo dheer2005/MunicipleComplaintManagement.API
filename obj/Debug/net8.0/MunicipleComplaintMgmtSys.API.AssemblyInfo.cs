@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MunicipleComplaintMgmtSys.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d45e0d78fcf7a9565906315299ce38478278685d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5e31cc597dd6748865c68cd28f757795238ebf74")]
 [assembly: System.Reflection.AssemblyProductAttribute("MunicipleComplaintMgmtSys.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MunicipleComplaintMgmtSys.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

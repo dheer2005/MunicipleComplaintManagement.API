@@ -19,7 +19,7 @@ namespace MunicipleComplaintMgmtSys.API.Controllers
         }
 
         [HttpPost("create")]
-        public async Task<IActionResult> Create([FromBody] DepartmentDto dto)
+        public async Task<IActionResult> CreateDepartment([FromBody] DepartmentDto dto)
         {
             var exists = await _dBContext.Departments.FirstOrDefaultAsync(d => d.DepartmentName == dto.DepartmentName);
             if (exists != null) 
@@ -84,7 +84,7 @@ namespace MunicipleComplaintMgmtSys.API.Controllers
         public async Task<IActionResult> CreateCategory([FromBody] CreateCategoryDto dto)
         {
             var exists = await _dBContext.Categories.AnyAsync(d => d.CategoryName == dto.CategoryName);
-            if (exists) return BadRequest(new { message = "Category already exists" });
+            if (exists) return BadRequest(new { message = "Category already exxists" });
 
             var category = new Category
             {
@@ -95,21 +95,29 @@ namespace MunicipleComplaintMgmtSys.API.Controllers
             _dBContext.Categories.Add(category);
             await _dBContext.SaveChangesAsync();
 
-            return Ok(new {message = "Category created"});
+            return Ok(new {message = "New Category created"});
         }
 
         [HttpGet("categories/departmentId/{departmentId}")]
         public async Task<IActionResult> CategoriesByDepartmentId(int departmentId)
         {
-            var categories = await _dBContext.Categories.Where(c=>c.DepartmentId == departmentId)
+            var categories = await _dBContext.Categories.Include(sc=>sc.SubCategories).Where(c=>c.DepartmentId == departmentId)
                 .Select(c => new
                 {
                     c.CategoryId,
-                    c.CategoryName
-                }).ToListAsync();
+                    c.CategoryName,
+                    SubCategories = c.SubCategories.Select(sc => new
+                    {
+                        sc.SubCategoryId,
+                        sc.SubCategoryName
+                    }).ToList()
 
+                }).ToListAsync();
             return Ok(categories);
         }
+
+        
+
 
         [HttpPost("category/sub-category/create")]
         public async Task<IActionResult> CreateSubCategory([FromBody] CreateSubCategoryDto dto)

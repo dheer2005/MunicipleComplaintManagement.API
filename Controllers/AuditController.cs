@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using MunicipleComplaintMgmtSys.API.ComplaintContext;
 using MunicipleComplaintMgmtSys.API.DTOs;
 using MunicipleComplaintMgmtSys.API.Models;
@@ -30,6 +31,16 @@ namespace MunicipleComplaintMgmtSys.API.Controllers
             await _dbContext.SaveChangesAsync();
 
             return Ok(audit);
+        }
+
+        [HttpGet("GetAllAuditlogs")]
+        public async Task<IActionResult> GetAllAuditlogs()
+        {
+            var auditLogs = await _dbContext.AuditLogs.OrderByDescending(c=>c.CreatedAt).ToListAsync();
+
+            if (auditLogs == null) return NotFound(new { message = "Logs not found" });
+
+            return Ok(auditLogs);
         }
     }
 }

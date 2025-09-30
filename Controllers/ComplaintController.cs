@@ -348,19 +348,28 @@ namespace MunicipleComplaintMgmtSys.API.Controllers
                 .FirstOrDefaultAsync(f => f.ComplaintId == dto.ComplaintId);
 
             if (existingFeedback != null)
-                return BadRequest(new { message = "Feedback already submitted for this complaint" });
-
-            var feedback = new Feedback
             {
-                ComplaintId = dto.ComplaintId,
-                CitizenId = complaint.CitizenId,
-                IsSatisfied = dto.IsSatisfied,
-                Rating = dto.Rating,
-                Comment = dto.Comments,
-                CreatedAt = DateTime.Now
-            };
+                existingFeedback.IsSatisfied = dto.IsSatisfied;
+                existingFeedback.Rating = dto.Rating;
+                existingFeedback.Comment = dto.Comments;
+                existingFeedback.CreatedAt = DateTime.Now;
 
-            _dbContext.Feedbacks.Add(feedback);
+            }
+            else
+            {
+                var feedback = new Feedback
+                {
+                    ComplaintId = dto.ComplaintId,
+                    CitizenId = complaint.CitizenId,
+                    IsSatisfied = dto.IsSatisfied,
+                    Rating = dto.Rating,
+                    Comment = dto.Comments,
+                    CreatedAt = DateTime.Now
+                };
+
+                _dbContext.Feedbacks.Add(feedback);
+            }
+
 
             if (!dto.IsSatisfied)
             {

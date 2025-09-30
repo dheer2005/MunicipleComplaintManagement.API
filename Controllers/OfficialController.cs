@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using MunicipleComplaintMgmtSys.API.ComplaintContext;
 using MunicipleComplaintMgmtSys.API.DTOs;
 using MunicipleComplaintMgmtSys.API.Enums;
+using MunicipleComplaintMgmtSys.API.Models;
 
 namespace MunicipleComplaintMgmtSys.API.Controllers
 {
@@ -14,6 +15,24 @@ namespace MunicipleComplaintMgmtSys.API.Controllers
         public OfficialController(ComplaintDBContext dBContext)
         {
             _dbContext = dBContext;
+        }
+
+        [HttpDelete("delete-complaint/{complaintId}")]
+        public async Task<IActionResult> DeleteComplaint(Guid complaintId)
+        {
+            var complaint = await _dbContext.Complaints.FirstOrDefaultAsync(c => c.ComplaintId == complaintId);
+            if (complaint == null) return BadRequest(new { message = "Complaint not found" });
+
+            var complaintFedback = await _dbContext.Feedbacks.FirstOrDefaultAsync(f => f.ComplaintId == complaint.ComplaintId);
+            if(complaintFedback != null) _dbContext.Feedbacks.Remove(complaintFedback);
+
+            var workUpdates = await _dbContext.WorkUpdates.Where(wu => wu.ComplaintId == complaint.ComplaintId).ToListAsync();
+            if(workUpdates != null) _dbContext.WorkUpdates.RemoveRange(workUpdates);
+
+            _dbContext.Complaints.Remove(complaint);
+            await _dbContext.SaveChangesAsync();
+
+            return Ok(new { message = "Complaint Deleted succesfully" });
         }
 
 
@@ -36,12 +55,21 @@ namespace MunicipleComplaintMgmtSys.API.Controllers
             return Ok(new { message = "Complaint assigned successfully" });
         }
 
-        [HttpGet("departments-overview")]
-        public async Task<IActionResult> GetDepartmentsOverview()
+        [HttpGet("departments-overview/{userId}")]
+        public async Task<IActionResult> GetDepartmentsOverview(Guid userId)
         {
+            var official = await _dbContext.Officials
+                            .Include(o=>o.OfficialDepartments)
+                            .ThenInclude(od=>od.Department)
+                            .FirstOrDefaultAsync(o => o.UserId == userId);
+
+            if (official == null)
+                return NotFound(new { message = "Official Not found" });
+
+            var departmentIds = official.OfficialDepartments.Select(od => od.DepartmentId).ToList();
             try
             {
-                var departments = await _dbContext.Departments
+                var departments = await _dbContext.Departments.Where(d=> departmentIds.Contains(d.DepartmentId))
                     .Select(d => new DepartmentOverviewDto
                     {
                         DepartmentId = d.DepartmentId,
@@ -282,6 +310,49 @@ namespace MunicipleComplaintMgmtSys.API.Controllers
             {
                 return StatusCode(500, new { message = "Error reassigning complaint", error = ex.Message });
             }
+        }
+
+        [HttpGet("GetAllUnassignedOfficialsForDepartment/{departmentId}")]
+        public async Task<IActionResult> GetAllOfficials(int departmentId)
+        {
+            var officials = await _dbContext.Officials
+                .Include(o=>o.User)
+                .Include(o => o.OfficialDepartments)
+                    .ThenInclude(o=>o.Department)
+                .Where(o=>!o.OfficialDepartments.Any(od=>od.DepartmentId == departmentId))
+                .Select(s => new
+                {
+                    s.OfficialId,
+                    s.User.FullName,
+                    departmentInfo = s.OfficialDepartments
+                        .Select(o=>new DepartmentInfoDto
+                        {
+                            DepartmentId = o.DepartmentId,
+                            DepartmentName = o.Department != null ? o.Department.DepartmentName : string.Empty
+                        }).ToList()
+                }).ToListAsync();
+
+            return Ok(officials);
+        }
+
+        [HttpGet("assignedOfficialsByDepartmentId/{departmentId}")]
+        public async Task<IActionResult> GetAssignedOfficials(int departmentId)
+        {
+            var assignedOfficials = await _dbContext.Officials
+                .Include(o => o.User)
+                .Include(o => o.OfficialDepartments)
+                    .ThenInclude(od => od.Department)
+                .Where(s => s.OfficialDepartments.Any(o => o.DepartmentId == departmentId))
+                .Select(o => new
+                {
+                    o.OfficialId,
+                    o.User.Email,
+                    o.User.FullName,
+                    
+                })
+                .ToListAsync();
+
+            return Ok(assignedOfficials);
         }
     }
 }

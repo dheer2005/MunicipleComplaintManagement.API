@@ -53,31 +53,28 @@ namespace MunicipleComplaintMgmtSys.API.Controllers
                     WorkerId = Guid.NewGuid(),
                     DepartmentId = dto.DepartmentId.Value,
                     IsAvailable = true,
-                    User = user
+                    UserId = user.UserId
                 };
 
                 _dbContext.Workers.Add(worker);
                 await _dbContext.SaveChangesAsync();
             }
-            else if (dto.Role == Enums.UserRole.Official && dto.DepartmentId.HasValue)
+            else if (dto.Role == Enums.UserRole.Official )
             {
                 var official = new Official
                 {
                     OfficialId = Guid.NewGuid(),
-                    DepartmentId = dto.DepartmentId.Value,
-                    User = user
+                    UserId = user.UserId
                 };
 
                 _dbContext.Officials.Add(official);
                 await _dbContext.SaveChangesAsync();
             }
 
-            var userForToken = await _dbContext.Users.FirstOrDefaultAsync(u => u.Email == dto.Email);
-            if (userForToken == null) return BadRequest(new { message = "User is not registered yet!... try to login after some time" });
             var token = _jwtService.GenerateToken(user);
             return Ok(new {
                 message = "User registered successfully",
-                token = token
+                userId = user.UserId
             });
         }
 
@@ -123,7 +120,6 @@ namespace MunicipleComplaintMgmtSys.API.Controllers
         }
 
 
-
         [HttpGet("user-profile/{userId}")]
         public async Task<ActionResult<UserProfileDto>> GetUserProfile(Guid userId)
         {
@@ -151,7 +147,8 @@ namespace MunicipleComplaintMgmtSys.API.Controllers
                 return NotFound(new { message = "User not found" });
 
             var official = await _dbContext.Set<Official>()
-                .Include(o => o.Department)
+                .Include(o => o.OfficialDepartments)
+                    .ThenInclude(od=>od.Department)
                 .FirstOrDefaultAsync(o => o.UserId == userId);
 
             var totalComplaints = user.Complaints.Count;
@@ -180,8 +177,12 @@ namespace MunicipleComplaintMgmtSys.API.Controllers
                 WorkerDepartmentName = user.WorkerProfile?.Department?.DepartmentName,
 
                 // Official Profile
-                OfficialDepartmentId = official?.DepartmentId,
-                OfficialDepartmentName = official?.Department?.DepartmentName,
+                OfficialDepartments = official?.OfficialDepartments
+                                        .Select(od => new DepartmentInfoDto
+                                        {
+                                            DepartmentId = od.DepartmentId,
+                                            DepartmentName = od.Department != null ? od.Department.DepartmentName : string.Empty
+                                        }).ToList() ?? new List<DepartmentInfoDto>(),
 
                 // Complaints
                 TotalComplaints = totalComplaints,

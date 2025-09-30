@@ -249,19 +249,29 @@ namespace MunicipleComplaintMgmtSys.API.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<int>("DepartmentId")
-                        .HasColumnType("int");
-
                     b.Property<Guid>("UserId")
                         .HasColumnType("uniqueidentifier");
 
                     b.HasKey("OfficialId");
 
-                    b.HasIndex("DepartmentId");
-
                     b.HasIndex("UserId");
 
                     b.ToTable("Officials");
+                });
+
+            modelBuilder.Entity("MunicipleComplaintMgmtSys.API.Models.OfficialDepartment", b =>
+                {
+                    b.Property<Guid>("OfficialId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("DepartmentId")
+                        .HasColumnType("int");
+
+                    b.HasKey("OfficialId", "DepartmentId");
+
+                    b.HasIndex("DepartmentId");
+
+                    b.ToTable("OfficialDepartments");
                 });
 
             modelBuilder.Entity("MunicipleComplaintMgmtSys.API.Models.SubCategory", b =>
@@ -504,21 +514,32 @@ namespace MunicipleComplaintMgmtSys.API.Migrations
 
             modelBuilder.Entity("MunicipleComplaintMgmtSys.API.Models.Official", b =>
                 {
-                    b.HasOne("MunicipleComplaintMgmtSys.API.Models.Department", "Department")
-                        .WithMany()
-                        .HasForeignKey("DepartmentId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("MunicipleComplaintMgmtSys.API.Models.User", "User")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("MunicipleComplaintMgmtSys.API.Models.OfficialDepartment", b =>
+                {
+                    b.HasOne("MunicipleComplaintMgmtSys.API.Models.Department", "Department")
+                        .WithMany("OfficialDepartments")
+                        .HasForeignKey("DepartmentId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("MunicipleComplaintMgmtSys.API.Models.Official", "Official")
+                        .WithMany("OfficialDepartments")
+                        .HasForeignKey("OfficialId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
                     b.Navigation("Department");
 
-                    b.Navigation("User");
+                    b.Navigation("Official");
                 });
 
             modelBuilder.Entity("MunicipleComplaintMgmtSys.API.Models.SubCategory", b =>
@@ -592,7 +613,14 @@ namespace MunicipleComplaintMgmtSys.API.Migrations
 
                     b.Navigation("Complaints");
 
+                    b.Navigation("OfficialDepartments");
+
                     b.Navigation("Workers");
+                });
+
+            modelBuilder.Entity("MunicipleComplaintMgmtSys.API.Models.Official", b =>
+                {
+                    b.Navigation("OfficialDepartments");
                 });
 
             modelBuilder.Entity("MunicipleComplaintMgmtSys.API.Models.SubCategory", b =>

@@ -18,9 +18,7 @@ namespace MunicipleComplaintMgmtSys.API.DTOs
         public string? WorkerDepartmentName { get; set; }
 
         // Official Profile
-        public int? OfficialDepartmentId { get; set; }
-        public string? OfficialDepartmentName { get; set; }
-
+        public List<DepartmentInfoDto>? OfficialDepartments { get; set; } = new();
         // Complaints Summary
         public int TotalComplaints { get; set; }
         public int PendingComplaints { get; set; }

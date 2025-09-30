@@ -102,6 +102,7 @@ namespace MunicipleComplaintMgmtSys.API.Controllers
                 {
                     TotalAssigned = await _dbContext.Complaints.CountAsync(c => c.AssignedWorkerId == worker.WorkerId),
                     Pending = await _dbContext.Complaints.CountAsync(c => c.AssignedWorkerId == worker.WorkerId && (c.CurrentStatus == ComplaintStatus.Pending && c.CurrentStatus == ComplaintStatus.Assigned)),
+                    Assigned = await _dbContext.Complaints.CountAsync(c=>c.AssignedWorkerId == worker.WorkerId && c.CurrentStatus == ComplaintStatus.Assigned),
                     InProgress = await _dbContext.Complaints.CountAsync(c => c.AssignedWorkerId == worker.WorkerId && c.CurrentStatus == ComplaintStatus.InProgress),
                     Resolved = await _dbContext.Complaints.CountAsync(c => c.AssignedWorkerId == worker.WorkerId && (c.CurrentStatus == ComplaintStatus.Resolved || c.CurrentStatus == ComplaintStatus.Closed)),
                     Overdue = await _dbContext.Complaints.CountAsync(c => c.AssignedWorkerId == worker.WorkerId &&
@@ -162,19 +163,18 @@ namespace MunicipleComplaintMgmtSys.API.Controllers
                     return NotFound(new { message = "Worker not found" });
                 }
 
-                var now = DateTime.Now; // take value outside LINQ
+                var now = DateTime.Now; 
 
                 var complaints = await _dbContext.Complaints
                     .Where(c => c.AssignedWorkerId == worker.WorkerId &&
                                 c.SlaDueAt.HasValue &&
-                                c.SlaDueAt.Value > now && // upcoming deadlines = future
+                                c.SlaDueAt.Value > now && 
                                 c.CurrentStatus != ComplaintStatus.Resolved &&
                                 c.CurrentStatus != ComplaintStatus.Closed)
                     .OrderBy(c => c.SlaDueAt)
                     .Take(5)
                     .ToListAsync();
 
-                // Priority calculation in memory (safe)
                 var upcoming = complaints.Select(c => new
                 {
                     ComplaintId = c.ComplaintId,
@@ -303,7 +303,6 @@ namespace MunicipleComplaintMgmtSys.API.Controllers
             }
 
 
-            // Optionally, update Complaint's current status and updatedAt
             complaint.CurrentStatus = Enum.Parse<ComplaintStatus>(dto.Status);
             complaint.UpdatedAt = DateTime.Now;
             complaint.SlaDueAt = workUpdate.EstimatedCompletionDate;

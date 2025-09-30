@@ -1,5 +1,171 @@
 [
   {
+    "ContainingType": "MunicipleComplaintMgmtSys.API.Controllers.AdminController",
+    "Method": "AssignOfficialToDepartment",
+    "RelativePath": "api/Admin/assignOfficialToDepartment/{officialId}/{departmentId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "officialId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "departmentId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MunicipleComplaintMgmtSys.API.Controllers.AdminController",
+    "Method": "DeleteCategory",
+    "RelativePath": "api/Admin/categories/delete/{categoryId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "categoryId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MunicipleComplaintMgmtSys.API.Controllers.AdminController",
+    "Method": "DeleteSubCategory",
+    "RelativePath": "api/Admin/category/sub-categories/delete/{subCategoryId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "subCategoryId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MunicipleComplaintMgmtSys.API.Controllers.AdminController",
+    "Method": "CitizensInfo",
+    "RelativePath": "api/Admin/Citizens",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MunicipleComplaintMgmtSys.API.Controllers.AdminController",
+    "Method": "GetDashboardStats",
+    "RelativePath": "api/Admin/dashboard-stats",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MunicipleComplaintMgmtSys.API.Controllers.AdminController",
+    "Method": "DeleteUsers",
+    "RelativePath": "api/Admin/deleteUsers/{userId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MunicipleComplaintMgmtSys.API.Controllers.AdminController",
+    "Method": "GetDepartmentsOverview",
+    "RelativePath": "api/Admin/departments-overview/{departmentId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "departmentId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MunicipleComplaintMgmtSys.API.Controllers.AdminController",
+    "Method": "GetComplaintByUserId",
+    "RelativePath": "api/Admin/Get-complaints",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MunicipleComplaintMgmtSys.API.Controllers.AdminController",
+    "Method": "GetOfficialInfo",
+    "RelativePath": "api/Admin/Official",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MunicipleComplaintMgmtSys.API.Controllers.AdminController",
+    "Method": "GetRecentComplaints",
+    "RelativePath": "api/Admin/recent-complaints",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MunicipleComplaintMgmtSys.API.Controllers.AdminController",
+    "Method": "UnAssignOfficialFromDepartment",
+    "RelativePath": "api/Admin/unAssignOfficialFromDepartment/{officialId}/{departmentId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "officialId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "departmentId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MunicipleComplaintMgmtSys.API.Controllers.AdminController",
+    "Method": "GetWorkerInfo",
+    "RelativePath": "api/Admin/workers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "MunicipleComplaintMgmtSys.API.Controllers.AuditController",
     "Method": "CreateAudit",
     "RelativePath": "api/Audit/create",
@@ -13,6 +179,16 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MunicipleComplaintMgmtSys.API.Controllers.AuditController",
+    "Method": "GetAllAuditlogs",
+    "RelativePath": "api/Audit/GetAllAuditlogs",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
@@ -398,7 +574,7 @@
   },
   {
     "ContainingType": "MunicipleComplaintMgmtSys.API.Controllers.DepartmentController",
-    "Method": "Create",
+    "Method": "CreateDepartment",
     "RelativePath": "api/Department/create",
     "HttpMethod": "POST",
     "IsController": true,
@@ -498,6 +674,22 @@
   },
   {
     "ContainingType": "MunicipleComplaintMgmtSys.API.Controllers.OfficialController",
+    "Method": "GetAssignedOfficials",
+    "RelativePath": "api/Official/assignedOfficialsByDepartmentId/{departmentId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "departmentId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MunicipleComplaintMgmtSys.API.Controllers.OfficialController",
     "Method": "GetComplaintSummaryByDepartment",
     "RelativePath": "api/Official/complaint-summary-by-department/{departmentId}",
     "HttpMethod": "GET",
@@ -540,12 +732,50 @@
   },
   {
     "ContainingType": "MunicipleComplaintMgmtSys.API.Controllers.OfficialController",
+    "Method": "DeleteComplaint",
+    "RelativePath": "api/Official/delete-complaint/{complaintId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "complaintId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MunicipleComplaintMgmtSys.API.Controllers.OfficialController",
     "Method": "GetDepartmentsOverview",
-    "RelativePath": "api/Official/departments-overview",
+    "RelativePath": "api/Official/departments-overview/{userId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MunicipleComplaintMgmtSys.API.Controllers.OfficialController",
+    "Method": "GetAllOfficials",
+    "RelativePath": "api/Official/GetAllUnassignedOfficialsForDepartment/{departmentId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "departmentId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {
